@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
         rel="stylesheet">
-
-
+    <!-- Remix icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Tailwind Css  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -42,7 +42,7 @@
         @layer components {
 
             .btn{
-                @apply bg-transparent px-11 py-4 rounded-full font-poppins font-semibold hover:cursor-pointer;
+                @apply bg-transparent px-10 py-2 lg:py-3 rounded-full font-poppins font-semibold hover:cursor-pointer;
             }
         
             .btn-black{
@@ -63,28 +63,57 @@
 <body>
 
     <header class="py-4 bg-off-white">
-        <nav class=" w-full lg:max-w-[1170px] mx-auto flex justify-between items-center">
+        <nav class=" w-full lg:max-w-[1234px] mx-auto flex justify-between items-center lg:px-8 px-4">
             <div class="logo">
                 <a class="font-sen font-bold text-[24px]" href="http://">Lesson.</a>
 
             </div>
-            <div class="menu">
-                <ul class="list-none flex gap-[42px] items-center">
-                    <li><a class="nav-link font-poppins font-base font-semibold text-black active" href="">Home</a></li>
-                    <li><a class="nav-link font-poppins font-base font-normal text-black-500" href="">Courses</a></li>
-                    <li><a class="nav-link font-poppins font-base font-normal text-black-500" href="">Pricing</a></li>
-                    <li><a class="nav-link font-poppins font-base font-normal text-black-500" href="">Reviews</a></li>
-                    <li><a class="btn btn-black inline-block ms-6" href="">Sign Up</a></li>
+            <div class="menu hidden md:block">
+                <ul class="list-none flex gap-[42px] items-center ">
+                    <li><a class="nav-link font-poppins text-base font-semibold text-black active" href="">Home</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Courses</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Pricing</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Reviews</a></li>
+                    <li><a class="btn btn-black inline-block text-base " href="">Sign Up</a></li>
                 </ul>
+
             </div>
+
+
+
+            <!-- Mobile Menu  -->
+
+            <div class="mobile-menu lg:hidden fixed top-0 right-0 h-full w-full bg-off-white shadow-lg transform translate-x-full opacity-0 transition-all duration-700 ease-in-out z-50 p-4 flex justify-center"
+                id="mobile-menu">
+                <ul class="list-none flex flex-col gap-6 text-center mt-16">
+                    <li><a class="nav-link font-poppins text-base font-semibold text-black active" href="">Home</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Courses</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Pricing</a></li>
+                    <li><a class="nav-link font-poppins text-base font-normal text-black-500" href="">Reviews</a></li>
+                    <li><a class="btn btn-black block text-base" href="">Sign Up</a></li>
+                </ul>
+
+                <!-- Menu Close Button  -->
+                <button id="closeMenu" class="text-[24px] absolute top-4 right-4"><i
+                        class="ri-close-large-line"></i></button>
+            </div>
+
+
+            <!-- Toggle Button  -->
+            <button id="menuToggle" class="text-[24px] md:hidden focus:outline-none">
+                <i class="ri-menu-line"></i>
+            </button>
 
 
         </nav>
     </header>
+
     <main></main>
     <footer></footer>
 
 
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
