@@ -14,7 +14,7 @@ close.addEventListener("click", () => {
 
 // Swiper Slider
 
-var swiper = new Swiper(".course-slider", {
+var swiper = new Swiper(".courseslider", {
   slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
