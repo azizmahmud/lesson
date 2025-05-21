@@ -26,3 +26,13 @@
   visibility: visible;
   width: 12px;
 }
+
+@media (max-width: 767px) {
+  .nav-link {
+   
+  }
+
+  .nav-link:after {
+    all: unset;
+  }
+}

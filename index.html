@@ -14,6 +14,8 @@
         rel="stylesheet">
     <!-- Remix icon  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Tailwind Css  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -65,7 +67,7 @@
     <header class="py-4 bg-off-white">
         <nav class=" w-full lg:max-w-[1234px] mx-auto flex justify-between items-center lg:px-8 px-4">
             <div class="logo">
-                <a class="font-sen font-bold text-[24px]" href="http://">Lesson.</a>
+                <a class="font-sen font-bold text-[32px]" href="http://">Lesson.</a>
 
             </div>
             <div class="menu hidden md:block">
@@ -108,10 +110,247 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <!-- Hero Section Start  -->
+        <section class="hero-section py-8 lg:py-16 bg-off-white">
+
+            <div class="w-full lg:max-w-[1234px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:px-8 px-4">
+
+
+                <!-- Left Content  -->
+                <div class="left-content relative">
+                    <div> <img class="w-full md:w-[95%] lg:w-[80%] rounded-xl" src="./img/hero-img.png" alt=""></div>
+
+
+                    <!-- Folating card  -->
+                    <div
+                        class=" absolute bottom-10 right-10 lg:bottom-16 lg:right-0 bg-white rounded-xl shadow-lg p-6 pe-16 flex flex-col gap-4 ">
+                        <div class="flex gap-4">
+                            <img class="w-full max-w-[48px]" src="./img/uix-icon.png" alt="">
+                            <div class="">
+                                <p class="font-poppins text-sm font-normal text-black-500">20 Courses</p>
+                                <h4 class=" mt-1 font-poppins text-lg font-semibold text-black">UI/UX Design</h4>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <img class="w-full max-w-[48px]" src="./img/development-icon.png" alt="">
+                            <div class="">
+                                <p class="font-poppins text-sm font-normal text-black-500">20 Courses</p>
+                                <h4 class=" mt-1 font-poppins text-lg font-semibold text-black">Development</h4>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <img class="w-full max-w-[48px]" src="./img/marketing-icon.png" alt="">
+                            <div class="">
+                                <p class="font-poppins text-sm font-normal text-black-500">30 Courses</p>
+                                <h4 class=" mt-1 font-poppins text-lg font-semibold text-black">Marketing</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Content  -->
+                <div class="right-content ps-0 lg:ps-20 md:ps-8 order-first md:order-last ">
+
+                    <h1
+                        class="font-sen font-bold text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-center md:text-left ">
+                        Learn
+                        without limits and spread
+                        knowledge.
+                    </h1>
+                    <p
+                        class="font-poppins text-lg leading-[1.8] font-normal text-black-500 mt-4 text-center md:text-left">
+                        Build new skills for
+                        that
+                        “this is my
+                        year” feeling with courses, certificates, and degrees from
+                        world-class universities and companies.</p>
+                    <div class="buttons-gorup mt-8 flex flex-col md:flex-row items-center gap-4 ">
+
+                        <button class="btn btn-yellow w-full max-w-[250px]">See Courses</button>
+                        <button class="flex items-center justify-start gap-4"><span
+                                class="w-[40px] h-[40px] flex items-center justify-center rounded-full text-yellow text-sm shadow-xl border border-gray-200 cursor-pointer"><i
+                                    class=" ri-play-fill"></i></span>
+                            <span class="font-poppins text-lg font-semibold text-black">Watch Video</span></button>
+
+                    </div>
+                    <div class="achivemnts mt-10">
+                        <p class="font-poppins text-lg font-normal text-black-500 text-center md:text-left">Recent
+                            engagement
+                        </p>
+                        <div class="flex lg:gap-8 gap-4 mb-8 mt-4 justify-center md:justify-start">
+                            <div class="flex items-end gap-3">
+                                <h2 class="font-sen font-bold text-4xl  lg:text-5xl">50K</h2>
+                                <p class="font-poppins text-lg font-normal text-black-500">Students</p>
+                            </div>
+                            <div class="flex items-end gap-3">
+                                <h2 class="font-sen font-bold text-4xl  lg:text-5xl">70+</h2>
+                                <p class="font-poppins text-lg font-normal text-black-500">Courses</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Course Section Satrt -->
+        <section class="course-section py-8 lg:py-16 bg-white">
+
+            <div class="w-full lg:max-w-[1234px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:px-8 px-4">
+
+
+                <div class="order-1 md:order-1">
+                    <h2 class="font-sen font-bold text-4xl">Our Popular Courses</h2>
+                    <p class="font-poppins text-lg font-normal text-black-500 mt-4">Build new skills with new trendy
+                        courses
+                        and shine for the next future career.</p>
+                </div>
+                <div class="flex justify-center lg:justify-end gap-4 items-center order-3 md:order-2">
+
+
+                    <div
+                        class="course-button-next w-[40px] h-[40px] flex items-center justify-center rounded-full text-yellow text-sm border border-yellow cursor-pointer hover:bg-yellow hover:text-white transition-all ease-in-out duration-300 ">
+                        <i class="ri-arrow-left-wide-fill"></i>
+                    </div>
+                    <div
+                        class="course-button-prev w-[40px] h-[40px] flex items-center justify-center rounded-full text-yellow text-sm border border-yellow cursor-pointer hover:bg-yellow hover:text-white transition-all ease-in-out duration-300">
+                        <i class="ri-arrow-right-wide-fill"></i>
+                    </div>
+
+
+                </div>
+                <div class="md:col-span-2 order-2 md:order-3  ">
+
+                    <!-- Swiper -->
+                    <div class="swiper course-slider">
+                        <div class="swiper-wrapper course-card-wapper pt-10 pb-5">
+                            <div
+                                class="swiper-slide course-card group border border-[#E2DFDA] hover:shadow-lg hover:border-[#ffffff] rounded-xl overflow-hidden transition-all duration-700 ease-in-out">
+
+                                <div class="course-thumb">
+                                    <img class="w-full" src="./img/basic-web-design.png" alt="">
+                                </div>
+                                <div class="course-card-content p-5">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">Basic web
+                                            design</h3>
+                                        <div class="course-review text-[#FEA31B] flex items-center gap-[4px]">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span class="text-[#FEA31B] font-poppins text-base">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="font-poppins text-sm font-normal text-black-500 mt-3 w-80">Get the best
+                                        course,
+                                        gain knowledge and shine for your future career.</p>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">$120.75
+                                        </h3>
+                                        <a href="" class="btn btn-black ease-in-out duration-300 hover:bg-yellow ">Book
+                                            Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="swiper-slide course-card group border border-[#E2DFDA] hover:shadow-lg hover:border-[#ffffff] rounded-xl overflow-hidden transition-all duration-700 ease-in-out">
+
+                                <div class="course-thumb">
+                                    <img src="./img/basic-web-design.png" alt="">
+                                </div>
+                                <div class="course-card-content p-5">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">Basic web
+                                            design</h3>
+                                        <div class="course-review text-[#FEA31B] flex items-center gap-[4px]">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span class="text-[#FEA31B] font-poppins text-base">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="font-poppins text-sm font-normal text-black-500 mt-3 w-80">Get the best
+                                        course,
+                                        gain knowledge and shine for your future career.</p>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">$120.75
+                                        </h3>
+                                        <a href="" class="btn btn-black ease-in-out duration-300 hover:bg-yellow ">Book
+                                            Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="swiper-slide course-card group border border-[#E2DFDA] hover:shadow-lg hover:border-[#ffffff] rounded-xl overflow-hidden transition-all duration-700 ease-in-out">
+
+                                <div class="course-thumb">
+                                    <img src="./img/basic-web-design.png" alt="">
+                                </div>
+                                <div class="course-card-content p-5">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">Basic web
+                                            design</h3>
+                                        <div class="course-review text-[#FEA31B] flex items-center gap-[4px]">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span class="text-[#FEA31B] font-poppins text-base">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="font-poppins text-sm font-normal text-black-500 mt-3 w-80">Get the best
+                                        course,
+                                        gain knowledge and shine for your future career.</p>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">$120.75
+                                        </h3>
+                                        <a href="" class="btn btn-black ease-in-out duration-300 hover:bg-yellow ">Book
+                                            Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="swiper-slide course-card group border border-[#E2DFDA] hover:shadow-lg hover:border-[#ffffff] rounded-xl overflow-hidden transition-all duration-700 ease-in-out">
+
+                                <div class="course-thumb">
+                                    <img src="./img/basic-web-design.png" alt="">
+                                </div>
+                                <div class="course-card-content p-5">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">Basic web
+                                            design</h3>
+                                        <div class="course-review text-[#FEA31B] flex items-center gap-[4px]">
+                                            <span><i class="ri-star-fill"></i></span>
+                                            <span class="text-[#FEA31B] font-poppins text-base">4.5</span>
+                                        </div>
+                                    </div>
+                                    <p class="font-poppins text-sm font-normal text-black-500 mt-3 w-80">Get the best
+                                        course,
+                                        gain knowledge and shine for your future career.</p>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <h3 class="course-title font-poppins text-lg font-semibold text-black">$120.75
+                                        </h3>
+                                        <a href="" class="btn btn-black ease-in-out duration-300 hover:bg-yellow ">Book
+                                            Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Course Section End -->
+    </main>
     <footer></footer>
 
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/index.js"></script>
 </body>
